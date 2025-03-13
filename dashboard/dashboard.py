@@ -39,9 +39,13 @@ tab1, tab2, tab3 = st.tabs(["Penggunaan Sepeda Sepanjang Tahun", "Penggunaan Sep
 
 # Tab 1: Penggunaan Sepeda Sepanjang Tahun
 with tab1:
+    # Update title based on selected date range
+    start_date_str = start_date.strftime("%Y")
+    end_date_str = end_date.strftime("%Y")
+    st.title(f'Penggunaan Sepeda Sepanjang Tahun {start_date_str} hingga {end_date_str}')
+    
     fig, ax = plt.subplots(figsize=(10, 6))
     sns.lineplot(x='yr_month', y='cnt', data=filtered_data, ax=ax)
-    ax.set_title('Penggunaan Sepeda Sepanjang Tahun 2011 hingga 2012')
     ax.set_xlabel('Tahun-Bulan')
     ax.set_ylabel('Jumlah Penggunaan Sepeda')
     ax.tick_params(axis='x', rotation=90)
