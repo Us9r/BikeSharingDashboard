@@ -1,7 +1,7 @@
 # Dicoding Collection Dashboard ✨
 =====================================
 
-link deploy: [dashboard](https://dashboardpy-soryuu.streamlit.app/)
+link deploy: [dashboard](h[ttps://dashboardpy-soryuu.streamlit.app/](https://bikesharingdashboard-hmknu99vas92nufezfkacx.streamlit.app/))
 
 Aplikasi dashboard untuk menganalisis data penggunaan sepeda di Washington D.C.
 
